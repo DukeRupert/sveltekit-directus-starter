@@ -7,6 +7,10 @@ settings:
 importers:
 
   .:
+    dependencies:
+      '@directus/sdk':
+        specifier: ^17.0.2
+        version: 17.0.2
     devDependencies:
       '@playwright/test':
         specifier: ^1.28.1
@@ -81,6 +85,10 @@ packages:
   '@ampproject/remapping@2.3.0':
     resolution: {integrity: sha512-30iZtAPgz+LTIYoeivqYo853f02jBYSd5uGnGpkFV0M3xOt9aN73erkgYAmZU43x4VfqcnLxW9Kpg3R5LC4YYw==}
     engines: {node: '>=6.0.0'}
+
+  '@directus/sdk@17.0.2':
+    resolution: {integrity: sha512-gKfWH6oQKnHw6mUl5lM32PTjtWrmSF6f09/zfN/74FKGPD853srCwip6rGif2R0GfdcrPHXwGHc7vTMXNDlniw==}
+    engines: {node: '>=18.0.0'}
 
   '@esbuild/aix-ppc64@0.21.5':
     resolution: {integrity: sha512-1SDgH6ZSPTlggy1yI6+Dbkiz8xzpHJEVAlF/AM1tHPLsf5STom9rwtjE4hKAF20FfXXNTFqEYXyJNWh1GiZedQ==}
@@ -1625,6 +1633,8 @@ snapshots:
     dependencies:
       '@jridgewell/gen-mapping': 0.3.5
       '@jridgewell/trace-mapping': 0.3.25
+
+  '@directus/sdk@17.0.2': {}
 
   '@esbuild/aix-ppc64@0.21.5':
     optional: true
